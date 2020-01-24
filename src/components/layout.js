@@ -29,12 +29,12 @@ const Layout = ({ children }) => {
         }>
          <Icon type = "facebook"
          className = {
-           `mr-5 text-2xl !text-blue-800 hover:bg-blue-600`
+           `mr-5 text-2xl text-blue-800 hover:bg-blue-600`
          }
          />
-         <Icon type = "instagram" className={`mr-5 text-2xl !text-pink-700`} / >
-         <Icon type = "twitter" className={`mr-5 text-2xl !text-blue-400`}/>
-         <Icon type = "youtube" className={`mr-5 text-2xl !text-red-700`}/ >
+         <Icon type = "instagram" className={`mr-5 text-2xl text-pink-700`} / >
+         <Icon type = "twitter" className={`mr-5 text-2xl text-blue-400`}/>
+         <Icon type = "youtube" className={`mr-5 text-2xl text-red-700`}/ >
         </div> 
         <div className = {
           `mt-2 text-sm text-gray-600 pt-2 text-center tracking-widest`
