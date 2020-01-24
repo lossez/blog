@@ -19,16 +19,16 @@ const Header = () => {
          <div className={`text-sm lg:flex-grow`}></div>
         <div>
           <Link to="/" className={`
-            font-medium text-xl rounded-full block mt-4 lg:inline-block lg:mt-0 text-red-500 px-3 py-2 hover:bg-red-500 hover:text-white hover:font-extrabold focus:bg-red-500 focus:text-white focus:font-extrabold
+            font-medium text-xl rounded-full block lg:inline-block lg:mt-0 text-red-500 px-3 mt-2 lg:px-3 lg:py-2 hover:bg-red-500 hover:text-white hover:font-extrabold focus:bg-red-500 focus:text-white focus:font-extrabold
           `}>Home</Link>
           <Link to="/" className={`
-            font-medium text-xl rounded-full block mt-4 lg:inline-block lg:mt-0 text-red-500 px-3 py-2 hover:bg-red-500 hover:text-white hover:font-extrabold focus:bg-red-500 focus:text-white focus:font-extrabold
+            font-medium text-xl rounded-full block lg:inline-block lg:mt-0 text-red-500 px-3  lg:px-3 lg:py-2 hover:bg-red-500 hover:text-white hover:font-extrabold focus:bg-red-500 focus:text-white focus:font-extrabold
           `}>News</Link>
           <Link to="/" className={`
-            font-medium text-xl rounded-full block mt-4 lg:inline-block lg:mt-0 text-red-500 px-3 py-2 hover:bg-red-500 hover:text-white hover:font-extrabold focus:bg-red-500 focus:text-white focus:font-extrabold
+            font-medium text-xl rounded-full block lg:inline-block lg:mt-0 text-red-500 px-3  lg:px-3 lg:py-2 hover:bg-red-500 hover:text-white hover:font-extrabold focus:bg-red-500 focus:text-white focus:font-extrabold
           `}>About</Link>
           <Link to="/" className={`
-            font-medium text-xl rounded-full block mt-4 lg:inline-block lg:mt-0 text-red-500 px-3 py-2 hover:bg-red-500 hover:text-white hover:font-extrabold focus:bg-red-500 focus:text-white focus:font-extrabold
+            font-medium text-xl rounded-full block lg:inline-block lg:mt-0 text-red-500 px-3  lg:px-3 lg:py-2 hover:bg-red-500 hover:text-white hover:font-extrabold focus:bg-red-500 focus:text-white focus:font-extrabold
           `}>Contact</Link>
         </div>
       </div>
