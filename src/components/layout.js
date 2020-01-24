@@ -12,7 +12,8 @@ const Layout = ({ children }) => {
           title
         }
       }
-    }`)
+    }`
+    )
   return (
     <>
       <Header/>
@@ -24,21 +25,17 @@ const Layout = ({ children }) => {
         </div>
       </div>
       <footer className = {`border-t border-gray-200 w-full bottom-0 p-6`} >
-        <div className = {
-          `flex justify-center`
-        }>
-         <Icon type = "facebook"
-         className = {
-           `mr-5 text-2xl text-blue-800 hover:bg-blue-600`
-         }
-         />
-         <Icon type = "instagram" className={`mr-5 text-2xl text-pink-700`} / >
-         <Icon type = "twitter" className={`mr-5 text-2xl text-blue-400`}/>
-         <Icon type = "youtube" className={`mr-5 text-2xl text-red-700`}/ >
-        </div> 
+        <div className="flex justify-center">
+           <Icon type = "facebook" className = {`mr-5 text-2xl text-blue-800 hover:bg-blue-600`}/>
+           <Icon type ="instagram" className = {`mr-5 text-2xl text-pink-700`}/> 
+           <Icon type ="twitter" className = {`mr-5 text-2xl text-blue-400`}/> 
+           <Icon type ="youtube" className = {`mr-5 text-2xl text-red-700`}/> 
+           
+        </div>
         <div className = {
           `mt-2 text-sm text-gray-600 pt-2 text-center tracking-widest`
-        } > copyright &copy; {new Date().getFullYear()} - {data.site.siteMetadata.title}. All right reserved </div> 
+        } > copyright &copy; {new Date().getFullYear()} - {data.site.siteMetadata.title}. All right reserved 
+        </div> 
       </footer>  
 
     </>

@@ -4,8 +4,8 @@ import logo from "../images/logo.png"
 
 const Header = () => (
   < header className = {
-      `font-fredoka bg-white
-    items-center jutify-between border-b border-gray-200 sticky top-0 p-4             
+      `w-full font-fredoka bg-white
+    items-center jutify-between border-b border-gray-200 !sticky fixed top-0 p-4             
   `}>
     <div className={`
       flex container mx-auto flex-wrap xl:px-12
