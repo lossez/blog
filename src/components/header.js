@@ -2,10 +2,11 @@ import { Link } from "gatsby"
 import React from "react"
 import logo from "../images/logo.png"
 
-const Header = () => (
-  < header className = {
+const Header = () => {
+  return(
+  <header className = {
       `w-full font-fredoka bg-white
-    items-center jutify-between border-b border-gray-200 !sticky fixed top-0 p-4             
+    items-center jutify-between border-b border-gray-200 sticky top-0 p-4             
   `}>
     <div className={`
       flex container mx-auto flex-wrap xl:px-12
@@ -35,6 +36,6 @@ const Header = () => (
       </div>
     </div>
   </header>
-)
+)}
 
 export default Header
