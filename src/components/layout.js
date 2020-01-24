@@ -17,10 +17,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header/>
-      <div className={`bg-red-100 p-16`}>
+      <div className={`bg-red-100 p-4 lg:p-16`}>
         <div className={`flex container mx-auto`}>
-        <div className={`w-3/4`}>
-          <main className={`rounded overflow-hidden shadow bg-white px-8 py-10 font-sans mb-12`}>{children}</main>
+        <div className={`lg:w-3/4 w-auto`}>
+          <main className={`rounded overflow-hidden shadow bg-white lg:px-8 lg:py-10 px-4 py-4 font-sans mb-12`}>{children}</main>
         </div>
         </div>
       </div>
