@@ -5,9 +5,23 @@
     font-family: 'Fredoka One', cursive;
     font-weight: 400;
 }
+h1 {
+    @apply text-3xl font-black;
+}
 
+h2 {
+    @apply text-xl;
+}
 
-
+h3 {
+    @apply text-lg;
+}
+p{
+    @apply mb-6
+}
+a{
+    @apply text-blue-600 underline;
+}
 @tailwind components;
 
 @tailwind utilities;
