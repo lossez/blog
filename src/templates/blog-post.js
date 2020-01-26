@@ -13,7 +13,7 @@ class BlogPostTemplate extends React.Component {
          } = this.props.pageContext
         return(
         <Layout>
-            <div className={`rounded border shadow px-4 py-4`}>
+            <div className={`rounded border shadow px-4 bg-white`}>
                 
             <SEO 
                 title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt}
@@ -23,9 +23,9 @@ class BlogPostTemplate extends React.Component {
                     <div className={`border-b-2 py-2 text-xl font-semibold`}>
                         <h1>{post.frontmatter.title}</h1>
                     </div>
-                    <p className={`py-1`}>
+                    <div className={`py-1`}>
                         {post.frontmatter.date}
-                    </p>
+                    </div>
                 </header>
                 <div className={`py-2`}>
                     <Image fluid={post.frontmatter.thumbnail.childImageSharp.fluid} />

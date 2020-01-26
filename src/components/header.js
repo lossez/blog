@@ -6,7 +6,8 @@ import { graphql , useStaticQuery } from 'gatsby'
 const Header = () => {
  const [isExpanded, toggleExpansion] = useState(false)
  const data = useStaticQuery(graphql`
-   query logoQuery {
+   query 
+   logoQuery {
      logo: file(absolutePath: {
        regex: "/logo.png/"
      }) {
@@ -17,7 +18,9 @@ const Header = () => {
        }
      }
    }
+  
  `)
+
 
   return (
     <nav className="container mx-auto font-fredoka flex items-center justify-between flex-wrap bg-white p-4">

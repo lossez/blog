@@ -19,7 +19,7 @@ class IndexPage extends React.Component {
               node.fields.slug
             }
             className = {
-              `rounded overflow-hidden shadow bg-white lg:px-8 lg:py-10 px-4 py-4 font-sans mb-10`
+              `rounded overflow-hidden shadow bg-white xl:px-8 xl:pb-6 px-4 py-4 font-sans mb-10`
             } >
               <header>
                 <div className={`border-b-2 border-gray-200 `}>

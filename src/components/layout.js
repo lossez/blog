@@ -3,21 +3,25 @@ import Header from "./header"
 import { useStaticQuery, graphql } from 'gatsby'
 import "./layout.css"
 import { Icon } from 'antd'
- 
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitileQuery{
+    query {
+    
       site{
         siteMetadata {
           title
         }
       }
-    }`
+  
+    }
+    `
+    
     )
   return (
     <>
       <Header/>
-      <div className={`bg-red-200 p-4 lg:p-16`}>
+      <div className={`bg-cover bg-red-100 p-4 lg:p-16`}>
         <div className={`flex container mx-auto`}>
         <div className={`lg:w-3/4 w-auto`}>
           <main>{children}</main>
