@@ -33,11 +33,17 @@ class IndexPage extends React.Component {
                   </div>
                   <p className="text-gray-700 text-base" dangerouslySetInnerHTML={{__html: node.frontmatter.description || node.excerpt}}/>
                </div>
-               <div className="px-6 py-4 -mt-4">
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Javascript</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Tutorial</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#nodejs</span>
+               <div className="mx-6 border-t-2 border-gray-200 -mt-6">
+              </div>
+               <div className="px-6 py-4">
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-2">#Javascript</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 my-2">#Tutorial</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 my-2">#nodejs</span>
                </div>
+               <div className="mx-6 py-2 -mt-4">
+                  <Link className=" no-underline text-red-500 font-black">Continue Reading</Link>
+               </div>
+              
             </article>  
             </div>
           )
