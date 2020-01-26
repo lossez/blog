@@ -15,30 +15,31 @@ class IndexPage extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
+            <div className="inline-flex">
+
             <article key = {
               node.fields.slug
             }
             className = {
-              `rounded overflow-hidden shadow bg-white xl:px-8 xl:pb-6 px-4 py-4 font-sans mb-10`
-            } >
-              <header>
-                <div className={`border-b-2 border-gray-200 `}>
-                  <h2>
-                    <Link className={`text-black no-underline font-black`} to={node.fields.slug}>{title}</Link>
-                  </h2>  
-                </div>
-                <small>{node.frontmatter.date}</small>
-              </header>
-              <div className={`py-2`}>
-                <Image fluid={node.frontmatter.thumbnail.childImageSharp.fluid}/>
-              </div>
-              <section>
-                <p dangerouslySetInnerHTML={{__html: node.frontmatter.description || node.excerpt}}/>
-              </section>
-              <div className={`-mt-4`}>
-                 <Link to={node.fields.slug} className={`no-underline text-red-500 font-bold`}>Continue reading</Link>
-              </div>
+              `max-w-full md:max-w-xs md:mr-2 lg:max-w-sm lg:mr-4 max-h-screen rounded shadow bg-white  mb-4`
+            }>
+               <Image fluid={node.frontmatter.thumbnail.childImageSharp.fluid}/>
+               <div className="px-6 py-4">
+                 <div className="font-bold text-xl ">
+                   <Link className={`text-black no-underline font-black`} to={node.fields.slug}>{title}</Link>
+                  </div>
+                  <div className="text-base text-gray-800 mb-2">
+                    <small>{node.frontmatter.date}</small>
+                  </div>
+                  <p className="text-gray-700 text-base" dangerouslySetInnerHTML={{__html: node.frontmatter.description || node.excerpt}}/>
+               </div>
+               <div className="px-6 py-4 -mt-4">
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Javascript</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Tutorial</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#nodejs</span>
+               </div>
             </article>  
+            </div>
           )
         })}
       </Layout>
@@ -69,7 +70,7 @@ export const pageQuery = graphql `
             description
             thumbnail {
               childImageSharp {
-                fluid(maxWidth: 900) {
+                fluid(maxWidth: 600, maxHeight: 315) {
                   ...GatsbyImageSharpFluid
                 }
               }

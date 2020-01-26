@@ -1,8 +1,7 @@
 ---
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
-thumbnail: "../../assets/logo.png"
+thumbnail: "./graphql.png"
 
 ---
 

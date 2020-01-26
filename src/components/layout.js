@@ -22,16 +22,7 @@ const Layout = ({ children }) => {
     <>
       <Header/>
       <div className={`bg-cover bg-red-100 p-4 lg:p-16`}>
-        <div className={`flex container mx-auto`}>
-        <div className={`lg:w-3/4 w-auto`}>
-          <main>{children}</main>
-        </div>
-        <div className={`hidden w-1/4`}>
-          <div className={`font-sans ml-4 rounded overflow-hidden shadow bg-white px-8 py-6`}>
-              <span className={`text-lg font-bold`}>Newlester</span>
-          </div>
-        </div>  
-        </div>
+        <main>{children}</main>   
       </div>
       <footer className = {`border-t border-gray-200 w-full bottom-0 p-6`} >
         <div className="flex justify-center">
